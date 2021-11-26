@@ -1,0 +1,22 @@
+Taxi Park cost:
+515000.0
+
+Sorting by fuel consumption:
+TaxiPark{cars=
+[Car{brand='Peugeot', model='308', maxLoadCapacity=4, priceForKm=3.0, cost=12000.0, fuelConsumption=8.0, maxSpeed=190, releaseYear=2017, bodyCar=HATCHBACK, airbagCount=4, conditioner=true}
+, Car{brand='Citroen', model='C4', maxLoadCapacity=4, priceForKm=3.0, cost=14000.0, fuelConsumption=8.0, maxSpeed=240, releaseYear=2019, bodyCar=HATCHBACK, airbagCount=6, conditioner=true}
+, Car{brand='Renault', model='Logan', maxLoadCapacity=3, priceForKm=2.0, cost=10000.0, fuelConsumption=8.0, maxSpeed=170, releaseYear=2014, bodyCar=SEDAN, AudioPlayer=true}
+, Car{brand='Renault', model='Logan', maxLoadCapacity=3, priceForKm=2.0, cost=9000.0, fuelConsumption=8.0, maxSpeed=160, releaseYear=2012, bodyCar=SEDAN, AudioPlayer=false}
+, Car{brand='Volkswagen', model='Sharan', maxLoadCapacity=8, priceForKm=5.0, cost=20000.0, fuelConsumption=9.0, maxSpeed=180, releaseYear=2019, bodyCar=MINIVAN, babySeatCount=4, tabletsCount=4}
+, Car{brand='Mercedes', model='W240', maxLoadCapacity=2, priceForKm=10.0, cost=250000.0, fuelConsumption=14.0, maxSpeed=400, releaseYear=2021, bodyCar=SEDAN, wiFi=true, climateControlZonesCount=4, armrest=true}
+, Car{brand='Mercedes', model='W230', maxLoadCapacity=2, priceForKm=10.0, cost=200000.0, fuelConsumption=15.0, maxSpeed=350, releaseYear=2021, bodyCar=SEDAN, wiFi=true, climateControlZonesCount=4, armrest=true}
+]}
+
+Car with setting range speed:
+[Car{brand='Peugeot', model='308', maxLoadCapacity=4, priceForKm=3.0, cost=12000.0, fuelConsumption=8.0, maxSpeed=190, releaseYear=2017, bodyCar=HATCHBACK, airbagCount=4, conditioner=true}
+, Car{brand='Citroen', model='C4', maxLoadCapacity=4, priceForKm=3.0, cost=14000.0, fuelConsumption=8.0, maxSpeed=240, releaseYear=2019, bodyCar=HATCHBACK, airbagCount=6, conditioner=true}
+, Car{brand='Renault', model='Logan', maxLoadCapacity=3, priceForKm=2.0, cost=10000.0, fuelConsumption=8.0, maxSpeed=170, releaseYear=2014, bodyCar=SEDAN, AudioPlayer=true}
+, Car{brand='Renault', model='Logan', maxLoadCapacity=3, priceForKm=2.0, cost=9000.0, fuelConsumption=8.0, maxSpeed=160, releaseYear=2012, bodyCar=SEDAN, AudioPlayer=false}
+, Car{brand='Volkswagen', model='Sharan', maxLoadCapacity=8, priceForKm=5.0, cost=20000.0, fuelConsumption=9.0, maxSpeed=180, releaseYear=2019, bodyCar=MINIVAN, babySeatCount=4, tabletsCount=4}
+]
+

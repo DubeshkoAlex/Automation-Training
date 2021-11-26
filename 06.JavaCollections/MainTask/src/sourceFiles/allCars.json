@@ -1,0 +1,101 @@
+{
+  "economyCar": [
+    {
+      "brand": "Renault",
+      "model": "Logan",
+      "maxLoadCapacity": 3,
+      "priceForKm": 2,
+      "cost": 10000,
+      "fuelConsumption": 8,
+      "maxSpeed": 170,
+      "releaseYear": 2014,
+      "bodyCar": "SEDAN",
+      "audioPlayer": true
+    },
+    {
+      "brand": "Renault",
+      "model": "Logan",
+      "maxLoadCapacity": 3,
+      "priceForKm": 2,
+      "cost": 9000,
+      "fuelConsumption": 8,
+      "maxSpeed": 160,
+      "releaseYear": 2012,
+      "bodyCar": "SEDAN",
+      "audioPlayer": false
+    }
+  ],
+  "comfortCar": [
+    {
+      "brand": "Peugeot",
+      "model": "308",
+      "maxLoadCapacity": 4,
+      "priceForKm": 3,
+      "cost": 12000,
+      "fuelConsumption": 8,
+      "maxSpeed": 190,
+      "releaseYear": 2017,
+      "bodyCar": "HATCHBACK",
+      "airbagCount": 4,
+      "conditioner": true
+    },
+    {
+      "brand": "Citroen",
+      "model": "C4",
+      "maxLoadCapacity": 4,
+      "priceForKm": 3,
+      "cost": 14000,
+      "fuelConsumption": 8,
+      "maxSpeed": 240,
+      "releaseYear": 2019,
+      "bodyCar": "HATCHBACK",
+      "airbagCount": 6,
+      "conditioner": true
+    }
+  ],
+  "familyCar": [
+    {
+      "brand": "Volkswagen",
+      "model": "Sharan",
+      "maxLoadCapacity": 8,
+      "priceForKm": 5,
+      "cost": 20000,
+      "fuelConsumption": 9,
+      "maxSpeed": 180,
+      "releaseYear": 2019,
+      "bodyCar": "MINIVAN",
+      "babySeatCount": 4,
+      "tabletsCount": 4
+    }
+  ],
+  "businessCar": [
+    {
+      "brand": "Mercedes",
+      "model": "W230",
+      "maxLoadCapacity": 2,
+      "priceForKm": 10,
+      "cost": 200000,
+      "fuelConsumption": 15,
+      "maxSpeed": 350,
+      "releaseYear": 2021,
+      "bodyCar": "SEDAN",
+      "wiFi": true,
+      "climateControlZonesCount": 4,
+      "armrest": true
+    },
+    {
+      "brand": "Mercedes",
+      "model": "W240",
+      "maxLoadCapacity": 2,
+      "priceForKm": 10,
+      "cost": 250000,
+      "fuelConsumption": 14,
+      "maxSpeed": 400,
+      "releaseYear": 2021,
+      "bodyCar": "SEDAN",
+      "wiFi": true,
+      "climateControlZonesCount": 4,
+      "armrest": true
+    }
+  ]
+}
