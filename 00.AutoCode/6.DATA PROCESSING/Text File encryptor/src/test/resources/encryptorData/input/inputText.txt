@@ -1,0 +1,3 @@
+cardNumber;Owner;brand;yearOfIssue;color;carBody;type;permittedWeight;unloadedWeight
+OAI 1234567;Ivan Ivanov;audi;1994;red;WAIYUY6UYBYEBNN147823;passenger car;1820;1300
+OAI 9876544;Petr Petrov;Geely;2021;green;IBDFG9LNJADSBIF-IUBDFA;passenger car;2160;1800

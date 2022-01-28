@@ -1,0 +1,2 @@
+OAI 1234567;Ivan Ivanov;audi;1994;red;WAIYUY6UYBYEBNN147823;passenger #ar;1820;1300
+OAI 9876544;Petr Petrov;Geely;2021;green;IBDFG9LNJADSBIF-IUBDFA;passenger #ar;2160;1800
