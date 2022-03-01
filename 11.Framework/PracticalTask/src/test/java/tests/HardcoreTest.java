@@ -29,12 +29,12 @@ public class HardcoreTest extends CommonConditions {
         CheckingEmailPage checkingEmailPage =new YopmailHomePage(driver)
                                                     .openPage()
                                                     .generateRandomEmail()
-                                                    .copyEmailIntoClipboard()
                                                     .openPost()
         ;
+        String emailAddress = checkingEmailPage.getEmailAddress();
         tabManager.switchToTab(1);
         String estimatedCost = emailGoogleCloudBlock
-                                    .putDataIntoEmailBlock()
+                                    .putDataIntoEmailBlock(emailAddress)
                                     .sendEmail()
                                     .getEstimatedCost()
         ;
