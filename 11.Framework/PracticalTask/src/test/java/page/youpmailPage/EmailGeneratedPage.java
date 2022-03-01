@@ -14,11 +14,9 @@ public class EmailGeneratedPage extends AbstractPage {
 
     private final String PAGE_URL ="https://yopmail.com/ru/email-generator";
 
-    @FindBy(xpath = "//button[@onclick=\"clipboard('egen')\"]")
-    private WebElement copyEmailTiClipboard;
-
     @FindBy(xpath = "//button[@onclick=\"egengo();\"]")
     private WebElement checkEmail;
+
 
     public EmailGeneratedPage(WebDriver driver) {
         super(driver);
@@ -28,12 +26,6 @@ public class EmailGeneratedPage extends AbstractPage {
     @Override
     public EmailGeneratedPage openPage() {
         driver.navigate().to(PAGE_URL);
-        return this;
-    }
-
-    public EmailGeneratedPage copyEmailIntoClipboard(){
-        copyEmailTiClipboard.click();
-        logger.info("Email adress was copied into clipboard");
         return this;
     }
 

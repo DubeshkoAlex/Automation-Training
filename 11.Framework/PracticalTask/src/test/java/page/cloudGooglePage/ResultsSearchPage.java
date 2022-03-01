@@ -34,10 +34,14 @@ public class ResultsSearchPage extends AbstractPage {
     public PricingCalculatorPage openPricingCalculatorLink(){
         int tryCount = 0;
         while(googleCloudPricingCalculatorLink.size()==0 && tryCount<5){
+            logger.info("try to refresh number: " + tryCount + "/5");
+            logger.info("costInTheLetter.size() == " + googleCloudPricingCalculatorLink.size());
             driver.manage().deleteAllCookies();
             driver.navigate().refresh();
             tryCount++;
         }
+        logger.info("all tryings are done, try ro get cost from the letter");
+        logger.info("Cost in the letter text: " + googleCloudPricingCalculatorLink.get(0).getText());
         googleCloudPricingCalculatorLink.get(0).click();
         logger.info("Link opened");
         return new PricingCalculatorPage(driver);
