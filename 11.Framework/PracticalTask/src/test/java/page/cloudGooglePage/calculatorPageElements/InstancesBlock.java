@@ -40,6 +40,15 @@ public class InstancesBlock extends AbstractElement {
     private final By dataCenterLocationLocator = By.xpath(mdSelect + "location')]");
     private final By committedUsageLocator = By.xpath(mdSelect + "cud')]");
 
+    private static final String OS_OPTION_XPATH = "//div[contains(text(),'%s')]/parent::md-option";
+    private static final String VM_OPTION_XPATH = "//md-select-menu[@style]//div[contains(text(),'%s')]";
+    private static final String SERIES_OPTION_XPATH = "//md-option[contains(@ng-repeat,'computeServer.family')]/div[contains(text(),'%s')]";
+    private static final String INSTANCE_TYPE_XPATH = "//md-option[contains(@ng-repeat,'instance in typeInfo')]/div[contains(text(),'%s')]";
+    private static final String GPU_TYPE_OPTION_XPATH = "//md-option[contains(@ng-repeat,'gpuList')]/div[contains(text(),'%s')]";
+    private static final String GPU_NUMBER_OPTION_XPATH = "//md-option[contains(@ng-repeat,'supportedGpuNumbers')]/div[contains(text(),'%s')]";
+    private static final String LOCAL_SSD_OPTION_XPATH = "//md-option[contains(@ng-repeat,'dynamicSsd')]/div[contains(text(),'%s')]";
+    private static final String DATA_CENTER_LOCATION_XPATH = "//md-option[contains(@ng-repeat,'inputRegionText.computeServer')]/div[contains(text(),'%s')]";
+    private static final String COMMITTED_USAGE_OPTION_XPATH = "//div[contains(@class,'md-active')]//md-option[@value='%s']";
 
     public InstancesBlock(WebDriver driver) {
         super(driver);
@@ -82,27 +91,25 @@ public class InstancesBlock extends AbstractElement {
     }
 
     private InstancesBlock chooseOsOption(String osOptionName){
-        By osOptionsLocator = By.xpath("//div[contains(text(),'" + osOptionName + "')]/parent::md-option");
+        By osOptionsLocator = By.xpath(String.format(OS_OPTION_XPATH,osOptionName)); // пересмотреть
         chooseMenu(operationSystemSoftwareMenuLocator,osOptionsLocator);
         return this;
     }
 
     private InstancesBlock chooseVMOption(String vmOptionName){
-        By vmOptionsLocator = By.xpath("//md-select-menu[@style]//div[contains(text(),'" + vmOptionName + "')]");
+        By vmOptionsLocator = By.xpath(String.format(VM_OPTION_XPATH,vmOptionName));
         chooseMenu(vmClassLocator,vmOptionsLocator);
         return this;
     }
 
     private InstancesBlock chooseSeriesOption(String seriesOptionName){
-        By seriesOptionsLocator = By.xpath("//md-option[contains(@ng-repeat,'computeServer.family')]/div[contains(text(),'"
-                + seriesOptionName + "')]");
+        By seriesOptionsLocator = By.xpath(String.format(SERIES_OPTION_XPATH,seriesOptionName));
         chooseMenu(seriesLocator,seriesOptionsLocator);
         return this;
     }
 
     private InstancesBlock chooseInstanceType(String instanceTypeOptionName){
-        By instanceTypeOptionsLocator = By.xpath("//md-option[contains(@ng-repeat,'instance in typeInfo')]/div[contains(text(),'"
-                + instanceTypeOptionName + "')]");
+        By instanceTypeOptionsLocator = By.xpath(String.format(INSTANCE_TYPE_XPATH,instanceTypeOptionName));
         chooseMenu(instanceTypeLocator,instanceTypeOptionsLocator);
         return this;
     }
@@ -113,36 +120,31 @@ public class InstancesBlock extends AbstractElement {
     }
 
     private InstancesBlock chooseGpuType(String gpuTypeOptionName){
-        By gpuTypeOptionsLocator = By.xpath("//md-option[contains(@ng-repeat,'gpuList')]/div[contains(text(),'"
-                + gpuTypeOptionName + "')]");
+        By gpuTypeOptionsLocator = By.xpath(String.format(GPU_TYPE_OPTION_XPATH,gpuTypeOptionName));
         chooseMenu(gpuTypeLocator,gpuTypeOptionsLocator);
         return this;
     }
 
     private InstancesBlock chooseGpuNumber(String gpuNumberOptionName){
-        By gpuNumberOptionsLocator = By.xpath("//md-option[contains(@ng-repeat,'supportedGpuNumbers')]/div[contains(text(),'"
-                + gpuNumberOptionName + "')]");
+        By gpuNumberOptionsLocator = By.xpath(String.format(GPU_NUMBER_OPTION_XPATH,gpuNumberOptionName));
         chooseMenu(gpuNumberLocator,gpuNumberOptionsLocator);
         return this;
     }
 
     private InstancesBlock chooseLocalSsd(String localSsdOptionName){
-        By localSsdOptionsLocator = By.xpath("//md-option[contains(@ng-repeat,'dynamicSsd')]/div[contains(text(),'"
-                + localSsdOptionName + "')]");
+        By localSsdOptionsLocator = By.xpath(String.format(LOCAL_SSD_OPTION_XPATH,localSsdOptionName));
         chooseMenu(localSsdLocator,localSsdOptionsLocator);
         return this;
     }
 
     private InstancesBlock chooseDataCenterLocation(String dataCenterLocationOptionName){
-        By dataCenterLocationOptionsLocator = By.xpath("//md-option[contains(@ng-repeat,'inputRegionText.computeServer')]/div[contains(text(),'"
-                + dataCenterLocationOptionName + "')]");
+        By dataCenterLocationOptionsLocator = By.xpath(String.format(DATA_CENTER_LOCATION_XPATH,dataCenterLocationOptionName));
         chooseMenu(dataCenterLocationLocator,dataCenterLocationOptionsLocator);
         return this;
     }
 
     private InstancesBlock chooseCommittedUsage(String committedUsageOptionName){
-        By committedUsageOptionsLocator = By.xpath("//div[contains(@class,'md-active')]//md-option[@value='"
-                + committedUsageOptionName + "']");
+        By committedUsageOptionsLocator = By.xpath(String.format(COMMITTED_USAGE_OPTION_XPATH,committedUsageOptionName));
         chooseMenu(committedUsageLocator,committedUsageOptionsLocator);
         return this;
     }
